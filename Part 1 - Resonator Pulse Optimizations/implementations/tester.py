@@ -1,9 +1,9 @@
-from sim_numba import NumbaPulseEnv
+from sim import PulseEnv
 from stable_baselines3 import PPO, A2C
 from sb3_contrib import TRPO, RecurrentPPO
 import numpy as np
 
-env = NumbaPulseEnv()
+env = PulseEnv()
 
 models_dir = "models"
 model_path = f"{models_dir}/1674586000_A2C/60000.zip"
